@@ -5,12 +5,16 @@
   
   <title>bobozaker frist blog!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="Keepalived+lVS+Nginx高可用自动部署keepalived脚本问题前景 为了避免单点故障和已经服务高可用，对比了负载工具haporxy、nginx、LVS+Keepalived的优缺点。公司现在的情况是用keepalived+lvs这种技术容易上手，容易管理以后扩展也够用，秉承了一套工具的延展性，减少学习成本,负载也完全满足要求。但是对于有些服务（webssh）端口监听的特殊要求，">
+<meta property="og:type" content="article">
 <meta property="og:title" content="bobozaker frist blog!">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/06/26/lvs_ha/index.html">
 <meta property="og:site_name" content="bobozaker frist blog!">
+<meta property="og:description" content="Keepalived+lVS+Nginx高可用自动部署keepalived脚本问题前景 为了避免单点故障和已经服务高可用，对比了负载工具haporxy、nginx、LVS+Keepalived的优缺点。公司现在的情况是用keepalived+lvs这种技术容易上手，容易管理以后扩展也够用，秉承了一套工具的延展性，减少学习成本,负载也完全满足要求。但是对于有些服务（webssh）端口监听的特殊要求，">
+<meta property="og:updated_time" content="2017-06-26T03:49:28.142Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="bobozaker frist blog!">
+<meta name="twitter:description" content="Keepalived+lVS+Nginx高可用自动部署keepalived脚本问题前景 为了避免单点故障和已经服务高可用，对比了负载工具haporxy、nginx、LVS+Keepalived的优缺点。公司现在的情况是用keepalived+lvs这种技术容易上手，容易管理以后扩展也够用，秉承了一套工具的延展性，减少学习成本,负载也完全满足要求。但是对于有些服务（webssh）端口监听的特殊要求，">
   
     <link rel="alternate" href="/atom.xml" title="bobozaker frist blog!" type="application/atom+xml">
   
@@ -59,45 +63,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-lvs-ha" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/06/26/lvs-ha/" class="article-date">
-  <time datetime="2017-06-26T04:52:50.000Z" itemprop="datePublished">2017-06-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/26/lvs-ha/">lvs_ha</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/26/lvs-ha/" data-id="cj4do3agz00018gvaf0vkor8w" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-lvs_ha" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-lvs_ha" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2017/06/26/lvs_ha/" class="article-date">
   <time datetime="2017-06-26T04:49:27.519Z" itemprop="datePublished">2017-06-26</time>
@@ -149,55 +115,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2017/06/26/hello-world/" class="article-date">
-  <time datetime="2017-06-26T03:20:29.219Z" itemprop="datePublished">2017-06-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/2017/06/26/lvs-ha/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
+          lvs_ha
+        
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/06/26/hello-world/">Hello World</a>
-    </h1>
   
+    <a href="/2017/06/26/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/06/26/hello-world/" data-id="cj4do3agz00008gvakb5terhj" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
 
 </section>
         
